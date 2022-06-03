@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>C:/Users/a9149/Desktop/On.png</file>
+        <file>C:/Users/a9149/Desktop/Off.png</file>
+        <file>C:/Users/a9149/Desktop/selected.png</file>
+        <file>C:/Users/a9149/Desktop/deselected.png</file>
+        <file>C:/Users/a9149/Desktop/close.png</file>
+        <file>C:/Users/a9149/Desktop/closed.png</file>
+        <file>C:/Users/a9149/Desktop/mini-hover.png</file>
+        <file>C:/Users/a9149/Desktop/mini.png</file>
+        <file>C:/Users/a9149/Desktop/icon.png</file>
+    </qresource>
+</RCC>

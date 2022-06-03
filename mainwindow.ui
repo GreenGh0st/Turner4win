@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>574</width>
+    <height>531</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>574</width>
+    <height>531</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="activate.qrc">
+    <normaloff>:/icon/C:/Users/a9149/Desktop/icon.png</normaloff>:/icon/C:/Users/a9149/Desktop/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*
+ManjaroMix Style Sheet for QT Applications
+Author: Jaime A. Quiroga P.
+Company: GTRONICK
+Last updated: 25/02/2020, 15:42.
+Available at: https://github.com/GTRONICK/QSS/blob/master/ManjaroMix.qss
+*/
+
+QMainWindow {
+	background-color: rgb(49, 49, 49);
+	border-radius:20px;
+
+}
+QMessageBox {
+    background-color: rgb(49, 49, 49);
+	border-radius:20px;
+}
+
+QMessageBox QLabel {
+    color: #d3dae3;
+}
+QCalendar {
+	background-color: rgb(49, 49, 49);
+}
+QTextEdit {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #4fa08b;
+	background-color: #222b2e;
+	color: #d3dae3;
+}
+QPlainTextEdit {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #4fa08b;
+	background-color: #222b2e;
+	color: #d3dae3;
+}
+QToolButton {
+	border-style: solid;
+	border-top-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgb(215, 215, 215), stop:1 rgb(222, 222, 222));
+	border-right-color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0 rgb(217, 217, 217), stop:1 rgb(227, 227, 227));
+	border-left-color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0 rgb(227, 227, 227), stop:1 rgb(217, 217, 217));
+	border-bottom-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgb(215, 215, 215), stop:1 rgb(222, 222, 222));
+	border-width: 1px;
+	border-radius: 5px;
+	color: #d3dae3;
+	padding: 2px;
+	background-color: rgb(255,255,255);
+}
+QToolButton:hover{
+	border-style: solid;
+	border-top-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgb(195, 195, 195), stop:1 rgb(222, 222, 222));
+	border-right-color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0 rgb(197, 197, 197), stop:1 rgb(227, 227, 227));
+	border-left-color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0 rgb(227, 227, 227), stop:1 rgb(197, 197, 197));
+	border-bottom-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgb(195, 195, 195), stop:1 rgb(222, 222, 222));
+	border-width: 1px;
+	border-radius: 5px;
+	color: rgb(0,0,0);
+	padding: 2px;
+	background-color: rgb(255,255,255);
+}
+QToolButton:pressed{
+	border-style: solid;
+	border-top-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgb(215, 215, 215), stop:1 rgb(222, 222, 222));
+	border-right-color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0 rgb(217, 217, 217), stop:1 rgb(227, 227, 227));
+	border-left-color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0 rgb(227, 227, 227), stop:1 rgb(217, 217, 217));
+	border-bottom-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgb(215, 215, 215), stop:1 rgb(222, 222, 222));
+	border-width: 1px;
+	border-radius: 5px;
+	color: rgb(0,0,0);
+	padding: 2px;
+	background-color: rgb(142,142,142);
+}
+
+QLineEdit {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #4fa08b;
+	background-color: #222b2e;
+	color: #d3dae3;
+}
+QLabel {
+	color: #d3dae3;
+}
+QLCDNumber {
+	color: #4d9b87;
+}
+QProgressBar {
+	text-align: center;
+	color: #d3dae3;
+	border-radius: 10px;
+	border-color: transparent;
+	border-style: solid;
+	background-color: #52595d;
+}
+QProgressBar::chunk {
+	background-color: #214037	;
+	border-radius: 10px;
+}
+QMenuBar {
+	background-color: rgb(49, 49, 49);
+}
+QMenuBar::item {
+	color: #d3dae3;
+  	spacing: 3px;
+  	padding: 1px 4px;
+	background-color: rgb(49, 49, 49);
+}
+
+QMenuBar::item:selected {
+  	background-color: #252a2e;
+	color: #FFFFFF;
+}
+QMenu {
+	background-color: rgb(49, 49, 49);
+}
+QMenu::item:selected {
+	background-color: #252a2e;
+	color: #FFFFFF;
+}
+QMenu::item {
+	color: #d3dae3;
+	background-color: rgb(49, 49, 49);
+}
+QTabWidget {
+	color:rgb(0,0,0);
+	background-color:#000000;
+}
+QTabWidget::pane {
+		border-color: #050a0e;
+		background-color: #1e282c;
+		border-style: solid;
+		border-width: 1px;
+    	border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+}
+QTabBar::tab:first {
+	border-style: solid;
+	border-left-width:1px;
+	border-right-width:0px;
+	border-top-width:1px;
+	border-bottom-width:0px;
+	border-top-color: #050a0e;
+	border-left-color: #050a0e;
+	border-bottom-color: #050a0e;
+	border-top-left-radius: 4px;
+	color: #d3dae3;
+	padding: 3px;
+	margin-left:0px;
+	background-color: rgb(49, 49, 49);
+}
+QTabBar::tab:last {
+	border-style: solid;
+	border-top-width:1px;
+	border-left-width:1px;
+	border-right-width:1px;
+	border-bottom-width:0px;
+	border-color: #050a0e;
+	border-top-right-radius: 4px;
+	color: #d3dae3;
+	padding: 3px;
+	margin-left:0px;
+	background-color: rgb(49, 49, 49);
+}
+QTabBar::tab {
+	border-style: solid;
+	border-top-width:1px;
+	border-bottom-width:0px;
+	border-left-width:1px;
+	border-top-color: #050a0e;
+	border-left-color: #050a0e;
+	border-bottom-color: #050a0e;
+	color: #d3dae3;
+	padding: 3px;
+	margin-left:0px;
+	background-color: rgb(49, 49, 49);
+}
+QTabBar::tab:selected, QTabBar::tab:last:selected, QTabBar::tab:hover {
+  	border-style: solid;
+  	border-left-width:1px;
+	border-bottom-width:0px;
+	border-right-color: transparent;
+	border-top-color: #050a0e;
+	border-left-color: #050a0e;
+	border-bottom-color: #050a0e;
+	color: #FFFFFF;
+	padding: 3px;
+	margin-left:0px;
+	background-color: #1e282c;
+}
+
+QTabBar::tab:selected, QTabBar::tab:first:selected, QTabBar::tab:hover {
+  	border-style: solid;
+  	border-left-width:1px;
+  	border-bottom-width:0px;
+  	border-top-width:1px;
+	border-right-color: transparent;
+	border-top-color: #050a0e;
+	border-left-color: #050a0e;
+	border-bottom-color: #050a0e;
+	color: #FFFFFF;
+	padding: 3px;
+	margin-left:0px;
+	background-color: #1e282c;
+}
+
+QCheckBox {
+	color: #d3dae3;
+	padding: 2px;
+}
+QCheckBox:disabled {
+	color: #808086;
+	padding: 2px;
+}
+
+QCheckBox:hover {
+   	width: 80px;
+    height: 35px;
+	border-radius:4px;
+	border-style:solid;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	border-width:1px;
+	border-color: transparent;
+}
+QCheckBox::indicator:checked {
+	border-image: url(:/icon/C:/Users/a9149/Desktop/On.png);
+	width: 80px;
+    height: 35px;
+}
+QCheckBox::indicator:unchecked {
+	border-image: url(:/icon/C:/Users/a9149/Desktop/Off.png);
+	width: 80px;
+    height: 35px;
+}
+QRadioButton {
+	color: #d3dae3;
+	padding: 1px;
+}
+QRadioButton::indicator:checked {
+	border-image: url(:/icon/C:/Users/a9149/Desktop/selected.png);
+	height: 50px;
+	width: 48px;
+	
+}
+QRadioButton::indicator:!checked {
+	border-image: url(:/icon/C:/Users/a9149/Desktop/deselected.png);
+	height: 50px;
+	width: 48px;
+}
+QStatusBar {
+	color:#027f7f;
+}
+QSpinBox {
+	color: #d3dae3;
+	background-color: #222b2e;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #4fa08b;
+}
+QDoubleSpinBox {
+	color: #d3dae3;
+	background-color: #222b2e;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #4fa08b;
+}
+QTimeEdit {
+	color: #d3dae3;
+	background-color: #222b2e;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #4fa08b;
+}
+QDateTimeEdit {
+	color: #d3dae3;
+	background-color: #222b2e;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #4fa08b;
+}
+QDateEdit {
+	color: #d3dae3;
+	background-color: #222b2e;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #4fa08b;
+}
+QFontComboBox {
+	color: #d3dae3;
+	background-color: #222b2e;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #4fa08b;
+}
+QComboBox {
+	color: #d3dae3;
+	background-color: #222b2e;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #4fa08b;
+}
+
+QDial {
+	background: #16a085;
+}
+
+QToolBox {
+	color: #a9b7c6;
+	background-color: #222b2e;
+}
+QToolBox::tab {
+	color: #a9b7c6;
+	background-color:#222b2e;
+}
+QToolBox::tab:selected {
+	color: #FFFFFF;
+	background-color:#222b2e;
+}
+QScrollArea {
+	color: #FFFFFF;
+	background-color:#222b2e;
+}
+QSlider::groove:horizontal {
+	height: 5px;
+	background-color: #52595d;
+}
+QSlider::groove:vertical {
+	width: 5px;
+	background-color: #52595d;
+}
+QSlider::handle:horizontal {
+	background: #1a2224;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(207,207,207);
+	width: 12px;
+	margin: -5px 0;
+	border-radius: 7px;
+}
+QSlider::handle:vertical {
+	background: #1a2224;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(207,207,207);
+	height: 12px;
+	margin: 0 -5px;
+	border-radius: 7px;
+}
+QSlider::add-page:horizontal {
+    background: #52595d;
+}
+QSlider::add-page:vertical {
+    background: #52595d;
+}
+QSlider::sub-page:horizontal {
+    background-color: #15433a;
+}
+QSlider::sub-page:vertical {
+    background-color: #15433a;
+}
+QScrollBar:horizontal {
+	max-height: 10px;
+	border: 1px transparent grey;
+	margin: 0px 20px 0px 20px;
+	background: transparent;
+}
+QScrollBar:vertical {
+	max-width: 10px;
+	border: 1px transparent grey;
+	margin: 20px 0px 20px 0px;
+	background: transparent;
+}
+QScrollBar::handle:horizontal {
+	background: #52595d;
+	border-style: transparent;
+	border-radius: 4px;
+	min-width: 25px;
+}
+QScrollBar::handle:horizontal:hover {
+	background: #58a492;
+	border-style: transparent;
+	border-radius: 4px;
+	min-width: 25px;
+}
+QScrollBar::handle:vertical {
+	background: #52595d;
+	border-style: transparent;
+	border-radius: 4px;
+	min-height: 25px;
+}
+QScrollBar::handle:vertical:hover {
+	background: #58a492;
+	border-style: transparent;
+	border-radius: 4px;
+	min-height: 25px;
+}
+QScrollBar::add-line:horizontal {
+   border: 2px transparent grey;
+   border-top-right-radius: 4px;
+   border-bottom-right-radius: 4px;
+   background: #15433a;
+   width: 20px;
+   subcontrol-position: right;
+   subcontrol-origin: margin;
+}
+QScrollBar::add-line:horizontal:pressed {
+   border: 2px transparent grey;
+   border-top-right-radius: 4px;
+   border-bottom-right-radius: 4px;
+   background: rgb(181,181,181);
+   width: 20px;
+   subcontrol-position: right;
+   subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical {
+   border: 2px transparent grey;
+   border-bottom-left-radius: 4px;
+   border-bottom-right-radius: 4px;
+   background: #15433a;
+   height: 20px;
+   subcontrol-position: bottom;
+   subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:pressed {
+   border: 2px transparent grey;
+   border-bottom-left-radius: 4px;
+   border-bottom-right-radius: 4px;
+   background: rgb(181,181,181);
+   height: 20px;
+   subcontrol-position: bottom;
+   subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal {
+   border: 2px transparent grey;
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+   background: #15433a;
+   width: 20px;
+   subcontrol-position: left;
+   subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal:pressed {
+   border: 2px transparent grey;
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+   background: rgb(181,181,181);
+   width: 20px;
+   subcontrol-position: left;
+   subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+   border: 2px transparent grey;
+   border-top-left-radius: 4px;
+   border-top-right-radius: 4px;
+   background: #15433a;
+   height: 20px;
+   subcontrol-position: top;
+   subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:pressed {
+   border: 2px transparent grey;
+   border-top-left-radius: 4px;
+   border-top-right-radius: 4px;
+   background: rgb(181,181,181);
+   height: 20px;
+   subcontrol-position: top;
+   subcontrol-origin: margin;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+   background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+   background: none;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>437</x>
+      <y>470</y>
+      <width>121</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	
+    border: 1px solid #B0B0B0;
+    border-radius: 10px;
+	background-color: rgb(243, 243, 243);
+    padding: 1px 4px;
+    min-width: 50px;
+    min-height: 16px;
+	border-style:outset;  
+	color:rgb(0, 0, 0)
+}
+
+QPushButton:hover{
+    background-color: #8BF;
+    border-color: #59F;
+}
+
+QPushButton:pressed
+{
+    border-width: 1px;      
+    background-color: #59F;
+    border-color: #B0B0B0;
+	border-style:inset;
+}
+
+QPushButton:focus, QPushButton:default {
+    border-color: #EA2; /* make the default button prominent */
+}</string>
+    </property>
+    <property name="text">
+     <string>重启资源管理器</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>561</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;浏览器将不再阻止你下载任何文件&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>禁用SmartScreen筛选器</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_4">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;任务栏时钟将显示秒&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>时钟显示秒</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>在桌面显示&quot;我的电脑&quot;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_2">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>禁用Windows自带杀毒软件</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_3">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>显示所有文件拓展名</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_6">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>登陆界面启用小键盘</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_5">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;点击文件资源管理器时将直接打开你选择的页面&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="whatsThis">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>打开资源管理器时打开</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>我的电脑</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_2">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>快速访问</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_3">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>下载目录</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>291</x>
+      <y>470</y>
+      <width>111</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	
+    border: 1px solid #B0B0B0;
+    border-radius: 10px;
+	background-color: rgb(243, 243, 243);
+    padding: 1px 4px;
+    min-width: 50px;
+    min-height: 16px;
+	border-style:outset;  
+	color:rgb(0, 0, 0)
+}
+
+QPushButton:hover{
+    background-color: #8BF;
+    border-color: #59F;
+}
+
+QPushButton:pressed
+{
+    border-width: 1px;      
+    background-color: #59F;
+    border-color: #B0B0B0;
+	border-style:inset;
+}
+
+QPushButton:focus, QPushButton:default {
+    border-color: #EA2; /* make the default button prominent */
+}</string>
+    </property>
+    <property name="text">
+     <string>去除开机密码</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>510</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>by: xiaozijian</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>30</y>
+      <width>291</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>调整完后请点击重启资源管理器按钮</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>470</y>
+      <width>121</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	
+    border: 1px solid #B0B0B0;
+    border-radius: 10px;
+	background-color: rgb(243, 243, 243);
+    padding: 1px 4px;
+    min-width: 50px;
+    min-height: 16px;
+	border-style:outset;  
+	color:rgb(0, 0, 0)
+}
+
+QPushButton:hover{
+    background-color: #8BF;
+    border-color: #59F;
+}
+
+QPushButton:pressed
+{
+    border-width: 1px;      
+    background-color: #59F;
+    border-color: #B0B0B0;
+	border-style:inset;
+}
+
+QPushButton:focus, QPushButton:default {
+    border-color: #EA2; /* make the default button prominent */
+}</string>
+    </property>
+    <property name="text">
+     <string>激活Windows</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>10</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+    border-image: url(:/icon/C:/Users/a9149/Desktop/close.png);
+	height: 60px;
+	width: 60px;
+}
+QPushButton:hover
+{
+	border-image: url(:/icon/C:/Users/a9149/Desktop/closed.png);
+	height: 60px;
+	width: 60px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>511</x>
+      <y>11</y>
+      <width>22</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	
+	border-image: url(:/icon/C:/Users/a9149/Desktop/mini.png);
+}
+QPushButton:hover
+{
+	
+	border-image: url(:/icon/C:/Users/a9149/Desktop/mini-hover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="activate.qrc"/>
+ </resources>
+ <connections/>
+</ui>
